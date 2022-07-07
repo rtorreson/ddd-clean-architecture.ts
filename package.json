@@ -43,7 +43,7 @@
     "reset-hard": "git clean -dfx && git reset --hard && npm install",
     "prepare-release": "run-s reset-hard version",
     "update-deps": "npm-check-updates -u",
-    "prepare": "husky install"
+    "postinstall": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
